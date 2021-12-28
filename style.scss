@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+
+$paleBlue: hsl(225, 100%, 94%);
+$brightBlue: hsl(245, 75%, 52%);
+
+$veryPaleBlue: hsl(225, 100%, 98%);
+$desatBlue: hsl(224, 23%, 55%);
+$darkBlue: hsl(223, 47%, 23%);
+
+
+body {
+	font-family: 'Red Hat Display', sans-serif;
+	font-size: 16px;
+	color: $desatBlue;
+	background-color: $paleBlue;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: white;
+
+	margin: 30px auto;
+	width: 450px;
+	border-radius: 20px;
+
+	box-shadow: 0 15px 25px 3px hsla(245, 75%, 52%, 8%);
+
+	img {
+		border-radius: 20px 20px 0 0;
+	}
+
+	.content {
+		display: inherit;
+		flex-direction: inherit;
+		align-items: inherit;
+
+		margin: 0 45px 40px 45px;
+
+		h1 {
+			color: $darkBlue;
+			font-weight: 900;
+			margin-top: 40px;
+			margin-bottom: 0px;
+		}
+
+		p {
+			text-align: center;
+			line-height: 160%;
+		}
+
+		.plan-div {
+			display: flex;
+			background-color: $veryPaleBlue;
+			border-radius: 10px;
+			width: 100%;
+			padding: 20px 0;
+	
+			img {
+				margin: 0 20px;
+			}
+
+			.info {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-around;
+
+				.plan {
+					color: $darkBlue;
+					font-weight: 900;
+				}
+			}
+
+			.change {
+				position: relative;
+				color: $brightBlue;
+				text-decoration: underline;
+				font-weight: 700;
+				left: 90px;
+				top: 12px;
+				transition: color 0.2s;
+			}
+			.change:hover {
+				color: rgb(118, 109, 240);
+				text-decoration: none;
+				cursor: pointer;
+			}
+		}
+
+		button {
+			border-style: none;
+			border-radius: 10px;
+			background-color: $brightBlue;
+			color: white;
+			font-family: 'Red Hat Display', sans-serif;
+			font-weight: 700;
+			letter-spacing: 0.5px;
+			padding: 15px 0;
+			margin: 30px 0;
+			width: 100%;
+			box-shadow: 0 15px 25px 3px hsla(245, 75%, 52%, 25%);
+			transition: background-color 0.2s;
+		} 
+		button:hover {
+			background-color: rgb(118, 109, 240);
+			cursor: pointer;
+		}
+
+		.cancel {
+			font-weight: 900;
+			transition: color 0.2s;
+		}
+		.cancel:hover {
+			color: $darkBlue;
+			cursor: pointer;
+		}
+	}	
+}

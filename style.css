@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  color: #7280a7;
+  background-color: #e0e8ff;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  margin: 30px auto;
+  width: 450px;
+  border-radius: 20px;
+  box-shadow: 0 15px 25px 3px rgba(56, 41, 224, 0.08);
+}
+main img {
+  border-radius: 20px 20px 0 0;
+}
+main .content {
+  display: inherit;
+  flex-direction: inherit;
+  align-items: inherit;
+  margin: 0 45px 40px 45px;
+}
+main .content h1 {
+  color: #1f2f56;
+  font-weight: 900;
+  margin-top: 40px;
+  margin-bottom: 0px;
+}
+main .content p {
+  text-align: center;
+  line-height: 160%;
+}
+main .content .plan-div {
+  display: flex;
+  background-color: #f5f7ff;
+  border-radius: 10px;
+  width: 100%;
+  padding: 20px 0;
+}
+main .content .plan-div img {
+  margin: 0 20px;
+}
+main .content .plan-div .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+main .content .plan-div .info .plan {
+  color: #1f2f56;
+  font-weight: 900;
+}
+main .content .plan-div .change {
+  position: relative;
+  color: #3829e0;
+  text-decoration: underline;
+  font-weight: 700;
+  left: 90px;
+  top: 12px;
+  transition: color 0.2s;
+}
+main .content .plan-div .change:hover {
+  color: #766df0;
+  text-decoration: none;
+  cursor: pointer;
+}
+main .content button {
+  border-style: none;
+  border-radius: 10px;
+  background-color: #3829e0;
+  color: white;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding: 15px 0;
+  margin: 30px 0;
+  width: 100%;
+  box-shadow: 0 15px 25px 3px rgba(56, 41, 224, 0.25);
+  transition: background-color 0.2s;
+}
+main .content button:hover {
+  background-color: #766df0;
+  cursor: pointer;
+}
+main .content .cancel {
+  font-weight: 900;
+  transition: color 0.2s;
+}
+main .content .cancel:hover {
+  color: #1f2f56;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */
