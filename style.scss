@@ -14,6 +14,9 @@ body {
 	font-size: 16px;
 	color: $desatBlue;
 	background-color: $paleBlue;
+	background-image: url("./images/pattern-background-desktop.svg");
+	background-repeat: repeat-x;
+	background-size: contain;
 }
 
 main {
@@ -28,7 +31,7 @@ main {
 
 	box-shadow: 0 15px 25px 3px hsla(245, 75%, 52%, 8%);
 
-	img {
+	.hero {
 		border-radius: 20px 20px 0 0;
 	}
 
@@ -117,4 +120,30 @@ main {
 			cursor: pointer;
 		}
 	}	
+}
+
+@media screen and (max-width: 375px) {
+	body {
+		background-image: url("./images/pattern-background-mobile.svg");
+	}
+	main {
+		width: 350px;
+
+		.hero {
+			width: 100%;
+		}
+		.content {
+			margin: 0 25px 35px 25px; 
+
+			.plan-div {
+				img {
+					margin: 0 15px;
+				}
+
+				.change {
+					left: 50px;
+				}
+			}
+		}
+	}
 }

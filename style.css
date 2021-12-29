@@ -4,6 +4,9 @@ body {
   font-size: 16px;
   color: #7280a7;
   background-color: #e0e8ff;
+  background-image: url("./images/pattern-background-desktop.svg");
+  background-repeat: repeat-x;
+  background-size: contain;
 }
 
 main {
@@ -16,7 +19,7 @@ main {
   border-radius: 20px;
   box-shadow: 0 15px 25px 3px rgba(56, 41, 224, 0.08);
 }
-main img {
+main .hero {
   border-radius: 20px 20px 0 0;
 }
 main .content {
@@ -93,6 +96,28 @@ main .content .cancel {
 main .content .cancel:hover {
   color: #1f2f56;
   cursor: pointer;
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    background-image: url("./images/pattern-background-mobile.svg");
+  }
+
+  main {
+    width: 350px;
+  }
+  main .hero {
+    width: 100%;
+  }
+  main .content {
+    margin: 0 25px 35px 25px;
+  }
+  main .content .plan-div img {
+    margin: 0 15px;
+  }
+  main .content .plan-div .change {
+    left: 50px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
