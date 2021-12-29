@@ -6,8 +6,8 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 
 ## Links
 
-- [GitHub](https://your-solution-url.com)
-- [Live Site](https://your-live-site-url.com)
+- [GitHub](https://github.com/avsecam/FM-OrderSummary)
+- [Live Site](https://avsecam.github.io/FM-OrderSummary/)
 
 ## Built with
 
