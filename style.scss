@@ -16,7 +16,7 @@ body {
 	background-color: $paleBlue;
 	background-image: url("./images/pattern-background-desktop.svg");
 	background-repeat: repeat-x;
-	background-size: contain;
+	background-size: cover;
 }
 
 main {
@@ -25,7 +25,10 @@ main {
 	align-items: center;
 	background-color: white;
 
-	margin: 30px auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 	width: 450px;
 	border-radius: 20px;
 
